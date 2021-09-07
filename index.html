@@ -1,9 +1,105 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>My blog</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>My learning journey</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+    <div class="container">
+      <header class="main-header">
+        <div class="title-container">
+          <h1>Nina's learning journey</h1>
+        </div>
+        <!-- <div class="nav">
+          <ul>
+            <li><a href="#" class="links">About me</a></li>
+            <li><a href="#" class="links">Blog</a></li>
+          </ul>
+        </div> -->
+      </header>
+
+      <main class="main-container">
+        <aside class="sidebar">
+          <div class="profile-card">
+            <!-- <h4>About me</h4> -->
+            <img class="profile-img" src="imgs/Nina-1.jpg" />
+            <p>
+              Hi, I am Nina!
+              <!-- <br /> -->
+              I am currently part of Dev Academy's Bootcamp in Auckland, New
+              Zealand.
+            </p>
+            <ul>
+              <li class="list-icons">
+                <ion-icon name="book-outline"></ion-icon>
+                <span>Reading</span>
+              </li>
+              <li class="list-icons">
+                <ion-icon name="musical-notes-outline"></ion-icon>
+                <span>Rock'n'roll</span>
+              </li>
+              <li class="list-icons">
+                <ion-icon name="camera-outline"></ion-icon>
+                <span>Bird photography</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <div class="main-content">
+          <div class="post-card">
+            <img
+              class="post-card-img"
+              src="imgs/programming.jpg"
+              alt="programming"
+            />
+            <div class="post-card-title">
+              <a
+                class="post-card-link"
+                target="_blank"
+                href="blog/template.html"
+              >
+                Inline vs Inline blocks</a
+              >
+            </div>
+          </div>
+          <div class="post-card">
+            <img
+              class="post-card-img"
+              src="imgs/planning.jpg"
+              alt="programming"
+            />
+            <div class="post-card-title">
+              <a class="post-card-link" target="_blank" href="#">
+                Learning Plan</a
+              >
+            </div>
+          </div>
+
+          <div class="post-card">Blog post3</div>
+          <div class="post-card">Blog post4</div>
+          <div class="post-card">Blog post5</div>
+          <div class="post-card">Blog post6</div>
+        </div>
+      </main>
+      <footer class="footer">2021 &copy;Nina Okumura</footer>
+    </div>
   </body>
 </html>
