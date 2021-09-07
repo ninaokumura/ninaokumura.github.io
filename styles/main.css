@@ -1,0 +1,154 @@
+:root {
+  --rose: #a97a83; /* header background-color */
+  --dark-sienna: #381119; /* header font-color*/
+  --rose-white: #f9f6f7; /*body background-color */
+  --smoky-black: #16070a; /*text font-color */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  font-size: 10px;
+  color: var(--smoky-black);
+}
+
+p {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  width: 100%;
+}
+
+ion-icon {
+  font-size: 2rem;
+  color: var(--dark-sienna);
+}
+
+span {
+  font-size: 1.3rem;
+}
+
+.list-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header*/
+.title-container {
+  padding: 5rem 0;
+}
+
+.main-header {
+  text-align: center;
+  color: var(--dark-sienna);
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--rose);
+}
+
+/* Main body */
+
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--rose-white);
+}
+
+.main-container {
+  max-width: 120rem;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  flex: 1;
+}
+
+main > h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 10rem;
+}
+
+/* Sidebar */
+
+.sidebar {
+  padding: 2rem;
+}
+
+.profile-img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+
+.profile-card {
+  /* outline: 1px solid red; */
+  max-width: 20rem;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card > h4 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+/* Main content */
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  /* flex: 1; */
+  /* padding: 2rem; */
+  align-content: start;
+}
+
+.post-card {
+  /* outline: 1px solid purple; */
+  height: 30rem;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.post-card-img {
+  width: 30rem;
+  border-radius: 1rem;
+}
+
+.post-card-link {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #381119;
+}
+
+.post-card-link:hover {
+  color: var(--rose);
+}
+
+.footer {
+  font-size: 1.5rem;
+  max-width: 120rem;
+  width: 100%;
+  margin: auto;
+}
