@@ -165,11 +165,11 @@ main > h2 {
 .footer {
   width: 100%;
   text-align: center;
-  background-color: #9333ea;
+  background-color: var(--purple);
   padding: 1rem;
 }
 
 .footer-txt {
-  color: #faf5ff;
+  color: var(--light-purple);
   font-size: 1rem;
 }

@@ -25,7 +25,7 @@
     <div class="container">
       <header class="main-header">
         <div class="title-container">
-          <h1>What does it mean to display inline vs inline blocks?</h1>
+          <h1>inline vs inline-block</h1>
         </div>
       </header>
       <main class="main-container">
@@ -45,22 +45,22 @@
           </p>
 
           <p>
-            There is different values for this property but today we are gonna
-            learn more about the <b>display inline</b> and the
+            There are different values for this CSS property. But today we are
+            gonna focus on two of them: <b>display inline</b> and
             <b>inline-block</b>.
           </p>
 
-          <h2>Inline boxes</h2>
+          <h2>Inline box</h2>
           <p>
-            First let's understand the main difference between the display
-            inline and the display block.
+            First let's understand the main difference between
+            <em>display: inline</em> and <em>display: block</em>.
           </p>
 
           <p>
-            The display inline, as the name suggest, place the items in a line
-            (side by side) and it causes no line breaks. The height and width
-            attributes it doesn't work on these elements because they can only
-            fill the content width.
+            The <em>display: inline</em>, as the name suggest, place the items
+            in a row and it causes no line break. The attributes
+            <em>height</em> and <em>width</em> do not apply to these elements
+            because it can only fill their content width.
           </p>
 
           <p>
@@ -109,9 +109,9 @@
           </p>
 
           <div class="main-content">
-            <div class="post-card">
+            <div class="list-container">
               <h3>Inline Boxes</h3>
-              <ul>
+              <ul class="list-items">
                 <li>
                   <ion-icon name="checkmark-outline"></ion-icon>
                   <span>Padding and margin only works horizontally</span>
@@ -130,9 +130,9 @@
                 </li>
               </ul>
             </div>
-            <div class="post-card">
+            <div class="list-container">
               <h3>Inline-Block Boxes</h3>
-              <ul class="list">
+              <ul class="list-items">
                 <li>
                   <ion-icon name="checkmark-outline"></ion-icon>
                   <span>Similar to an inline element </span>
@@ -151,9 +151,9 @@
                 </li>
               </ul>
             </div>
-            <div class="post-card">
+            <div class="list-container">
               <h3>Block Boxes</h3>
-              <ul>
+              <ul class="list-items">
                 <li>
                   <ion-icon name="checkmark-outline"></ion-icon>
                   <span>The elements are display as blocks</span>
