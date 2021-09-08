@@ -40,34 +40,35 @@
           <p>
             So, in this article I am gonna explore the CSS display property,
             which is commonly used to define how the elements will be placed in
-            your page. It is very important topic, specially if you wanna learn
-            how to create better layouts.
+            your page. It is a very important topic, specially if you wanna
+            learn how to create better layouts because it allows you to control
+            the behavior of those elements.
           </p>
 
           <p>
             There are different values for this CSS property. But today we are
-            gonna focus on two of them: <b>display inline</b> and
-            <b>inline-block</b>.
+            gonna focus on two of them: <em>display inline</em> and
+            <em>inline-block</em>.
           </p>
 
-          <h2>Inline box</h2>
+          <h2>Inline</h2>
           <p>
             First let's understand the main difference between
             <em>display: inline</em> and <em>display: block</em>.
           </p>
 
           <p>
-            The <em>display: inline</em>, as the name suggest, place the items
-            in a row and it causes no line break. The attributes
+            The <em>display: inline</em>, as the name implies, place the items
+            side by side and it causes no line break. The attributes
             <em>height</em> and <em>width</em> do not apply to these elements
-            because it can only fill their content width.
+            because it can only fill their own content width.
           </p>
 
           <p>
             Now, it is important to highlight that the box model works in a
-            different way in this case, because it can accept attributes such
-            as, padding and margins but it can only be applied horizontally
-            (left and right).
+            different way in this case. It can accept attributes such as,
+            padding and margins but it will only be applied horizontally (left
+            and right).
           </p>
 
           <p>
@@ -82,17 +83,19 @@
           element"
           />
 
-          <h2>Block boxes</h2>
+          <h2>Block</h2>
 
           <p>
-            Now the block elements are placed vertically by default, so in this
-            case, it does cause an line break. These elements takes 100% of the
-            parent element's width and it doesn't matter the content you put in
-            there, it will always occupy the space available.
+            Now on <em> display: block</em> the elements are placed vertically
+            by default, so in this case, it does cause a line break. These
+            elements takes 100% of the parent element's width and it doesn't
+            matter the content you put in there, it will always occupy all the
+            space available.
           </p>
 
           <p>
-            Examples of block elements: div, paragraph, heading, section, etc...
+            Examples of block elements: div, paragraph, heading, section,
+            footer, etc...
           </p>
           <img
             class="article-img"
@@ -102,15 +105,15 @@
 
           <h2>Inline-block</h2>
           <p>
-            The inline-block elements looks like inline from the outside, but
-            behaves like a block level on the inside. It can accept paddings and
-            margins in all sides and it is commonly used to create navigation
-            links or buttons.
+            The <em>display: inline-block</em> looks like an inline element from
+            the outside, but behaves like a block element. It can accept
+            paddings and margins in all sides and it is commonly used to create
+            navigation links and buttons.
           </p>
 
-          <div class="main-content">
+          <div class="grid-list">
             <div class="list-container">
-              <h3>Inline Boxes</h3>
+              <h3>Inline</h3>
               <ul class="list-items">
                 <li>
                   <ion-icon name="checkmark-outline"></ion-icon>
@@ -131,7 +134,7 @@
               </ul>
             </div>
             <div class="list-container">
-              <h3>Inline-Block Boxes</h3>
+              <h3>Inline-Block</h3>
               <ul class="list-items">
                 <li>
                   <ion-icon name="checkmark-outline"></ion-icon>
@@ -152,7 +155,7 @@
               </ul>
             </div>
             <div class="list-container">
-              <h3>Block Boxes</h3>
+              <h3>Block</h3>
               <ul class="list-items">
                 <li>
                   <ion-icon name="checkmark-outline"></ion-icon>
@@ -177,7 +180,7 @@
         </article>
       </main>
       <footer class="footer">
-        <span class="footer-txt">2021 &copy;Nina Okumura</span>
+        <span class="footer-txt"> &copy; 2021 Nina Okumura</span>
       </footer>
     </div>
   </body>

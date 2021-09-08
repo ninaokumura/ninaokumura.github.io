@@ -42,10 +42,10 @@ ion-icon {
 
 .container {
   margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--rose-white);
+  /* min-height: 100vh; */
+  /* display: flex;
+  flex-direction: column; */
+  background-color: var(--light-purple);
 }
 
 .main-container {
@@ -80,7 +80,7 @@ ion-icon {
   padding: 1rem;
 }
 
-.main-content {
+.grid-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -95,13 +95,9 @@ ion-icon {
   display: grid;
   place-items: center;
   padding: 1rem;
-  transition: all 0.3s ease;
-}
-
-.list-container > ul {
-  /* margin: auto; */
-  width: 100%;
-  /* outline: 1px solid purple; */
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  background-color: white;
 }
 
 .list-container > h3 {

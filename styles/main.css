@@ -30,13 +30,17 @@ ion-icon {
   color: var(--fuchsia);
 }
 
-.list-icons {
+ion-icon:hover {
+  color: var(--purple);
+}
+
+/* .list-icons {
   display: flex;
   align-items: center;
   gap: 1.2rem;
   margin: 0;
   padding: 0;
-}
+} */
 
 /* Header*/
 .title-container {
@@ -100,14 +104,14 @@ main > h2 {
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
-.icon-container {
+/* .icon-container {
   display: flex;
   gap: 2rem;
-}
+} */
 
-.icon-container > a {
+/* .icon-container > a {
   text-decoration: none;
-}
+} */
 
 .profile-card > h4 {
   margin-bottom: 1.5rem;
@@ -133,12 +137,6 @@ main > h2 {
   transition: all 0.3s ease;
 }
 
-.post-card:hover {
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 1rem;
-  background-color: white;
-}
-
 .post-card-img {
   height: 8rem;
 
@@ -152,15 +150,9 @@ main > h2 {
 }
 
 .post-card-link:hover {
-  color: var(--rose);
+  color: var(--purple);
+  /* transition: all 0.3s ease; */
 }
-
-/* .footer {
-  height: 3rem;
-  width: 100%;
-  background-color: var(--rose);
-  position: relative;
-} */
 
 .footer {
   width: 100%;
