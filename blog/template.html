@@ -1,43 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Stories and Legends (PAGE title)</title>
     <meta charset="UTF-8" />
-    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>My learning journey</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <h1>The Story of Te Houtaewa (PAGE heading)</h1>
-    <h2>
-      E kore e mau i a koe, he wae kai pakiaka.
-      <em
-        >A foot accustomed to running over roots makes the speediest runner.</em
-      >
-      (Optional SUB title)
-    </h2>
-    <h3>10 November 2010</h3>
+    <div class="container">
+      <header class="main-header">
+        <div class="title-container">
+          <h1>What does it mean to display inline vs inline blocks?</h1>
+        </div>
+      </header>
+      <main class="main-container">
+        <article class="article-container">
+          <h2>Display property</h2>
+          <p>
+            To simplify your comprehension on this subject I suggest that you
+            try to visualize all the elements as boxes. That's basically how the
+            elements are treated on a webpage.
+          </p>
 
-    <p>
-      Te Houtaewa was the fastest runner of his day and played many pranks on
-      his peoples enemies. One morning his mother wanted kumara for the hangi
-      (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short
-      distance away. He agreed to fetch the kumara and told his mother to
-      prepare the hangi.
-    </p>
-    <p>
-      Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as
-      he wanted to annoy some Te Rarawa people who lived there. Carrying two
-      large baskets for the kumara, he ran like the wind, completing the journey
-      over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few
-      hours it takes a good hangi to heat up properly. On reaching Ahipara, he
-      went straight to the people's kumara pataka (storehouse for the sweet
-      potatoes) situated at the foot of the hill Whangatauatia.
-    </p>
-    <p>
-      While Te Houtaewa was filling his baskets with kumara he was spotted
-      stealing the kai (food). He was immediately recognised.
-    </p>
+          <p>
+            So, in this article I am gonna explore the CSS display property,
+            which is commonly used to define how the elements will be placed in
+            your page. It is very important topic, specially if you wanna learn
+            how to create better layouts.
+          </p>
 
-    <!-- this is a comment. -->
+          <p>
+            There is different values for this property but today we are gonna
+            learn more about the <b>display inline</b> and the
+            <b>inline-block</b>.
+          </p>
+
+          <h2>Inline boxes</h2>
+          <p>
+            First let's understand the main difference between the display
+            inline and the display block.
+          </p>
+
+          <p>
+            The display inline, as the name suggest, place the items in a line
+            (side by side) and it causes no line breaks. The height and width
+            attributes it doesn't work on these elements because they can only
+            fill the content width.
+          </p>
+
+          <p>
+            Now, it is important to highlight that the box model works in a
+            different way in this case, because it can accept attributes such
+            as, padding and margins but it can only be applied horizontally
+            (left and right).
+          </p>
+
+          <p>
+            Examples of inline elements: anchor, span, image and also formatting
+            tags, such as, strong and italic.
+          </p>
+
+          <img
+            class="article-img"
+            src="/imgs/inline el.jpeg"
+            alt="inline
+          element"
+          />
+
+          <h2>Block boxes</h2>
+
+          <p>
+            Now the block elements are placed vertically by default, so in this
+            case, it does cause an line break. These elements takes 100% of the
+            parent element's width and it doesn't matter the content you put in
+            there, it will always occupy the space available.
+          </p>
+
+          <p>
+            Examples of block elements: div, paragraph, heading, section, etc...
+          </p>
+          <img
+            class="article-img"
+            src="/imgs/block el.jpeg"
+            alt="block element"
+          />
+
+          <h2>Inline-block</h2>
+          <p>
+            The inline-block elements looks like inline from the outside, but
+            behaves like a block level on the inside. It can accept paddings and
+            margins in all sides and it is commonly used to create navigation
+            links or buttons.
+          </p>
+
+          <div class="main-content">
+            <div class="post-card">
+              <h3>Inline Boxes</h3>
+              <ul>
+                <li>
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span>Padding and margin only works horizontally</span>
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span>Causes no line breaks</span>
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span>Occupy only the content's space</span>
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span>Heights and widths do not apply</span>
+                </li>
+              </ul>
+            </div>
+            <div class="post-card">
+              <h3>Inline-Block Boxes</h3>
+              <ul class="list">
+                <li>
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span>Similar to an inline element </span>
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span>Causes no line breaks</span>
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span>Occupy only the content's space</span>
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span>Box-model can be applied</span>
+                </li>
+              </ul>
+            </div>
+            <div class="post-card">
+              <h3>Block Boxes</h3>
+              <ul>
+                <li>
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span>The elements are display as blocks</span>
+                </li>
+
+                <li>
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span>Placed vertically (causes line breaks)</span>
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span>Occupy 100% of the parent's width</span>
+                </li>
+                <li>
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                  <span>Box-model can be applied</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer class="footer">
+        <span class="footer-txt">2021 &copy;Nina Okumura</span>
+      </footer>
+    </div>
   </body>
 </html>
