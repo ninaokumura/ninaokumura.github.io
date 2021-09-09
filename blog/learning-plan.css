@@ -1,0 +1,88 @@
+:root {
+  --purple: #9333ea; /* header background-color */
+  --light-purple: #faf5ff; /* header font-color and main background*/
+  --dark-purple: #1d0a2f; /*text font-color */
+  --fuchsia: #a21caf; /*icon and image color*/
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  font-size: 10px;
+  color: var(--dark-purple);
+}
+
+/* Header*/
+.title-container {
+  padding: 5rem 0;
+  text-align: center;
+  color: var(--light-purple);
+  height: 15rem;
+  font-size: 2rem;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--purple);
+}
+
+/* Main body */
+
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-purple);
+}
+
+.main-container {
+  max-width: 120rem;
+  width: 100%;
+  margin: auto;
+  /* outline: 1px solid rebeccapurple; */
+}
+
+.article-container > h2 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.article-container > p {
+  margin: 1.5rem auto;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  text-align: justify;
+  max-width: 80rem;
+}
+
+.article-container {
+  padding: 4rem 0;
+}
+
+.article-img {
+  width: 60rem;
+  display: block;
+  margin: auto;
+  padding: 1rem;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: var(--purple);
+  padding: 1rem;
+}
+
+.footer-txt {
+  color: var(--light-purple);
+  font-size: 1rem;
+}
