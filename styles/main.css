@@ -34,14 +34,6 @@ ion-icon:hover {
   color: var(--purple);
 }
 
-/* .list-icons {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  margin: 0;
-  padding: 0;
-} */
-
 /* Header*/
 .title-container {
   padding: 5rem 0;
@@ -104,15 +96,6 @@ main > h2 {
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* .icon-container {
-  display: flex;
-  gap: 2rem;
-} */
-
-/* .icon-container > a {
-  text-decoration: none;
-} */
-
 .profile-card > h4 {
   margin-bottom: 1.5rem;
   font-size: 2rem;
@@ -134,12 +117,10 @@ main > h2 {
   display: grid;
   place-items: center;
   padding: 1rem;
-  transition: all 0.3s ease;
 }
 
 .post-card-img {
   height: 8rem;
-
   border-radius: 1rem;
 }
 
@@ -151,7 +132,6 @@ main > h2 {
 
 .post-card-link:hover {
   color: var(--purple);
-  /* transition: all 0.3s ease; */
 }
 
 .footer {
