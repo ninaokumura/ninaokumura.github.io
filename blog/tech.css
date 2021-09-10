@@ -31,6 +31,15 @@ ion-icon {
   font-size: 2rem;
 }
 
+.home-link {
+  color: var(--light-purple);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.home-link:hover {
+  color: var(--dark-purple);
+}
 .main-header {
   display: flex;
   flex-direction: column;
@@ -56,7 +65,7 @@ ion-icon {
 }
 
 .article-container > h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   padding: 2rem 0;
 }
@@ -65,7 +74,7 @@ ion-icon {
   margin: 1.5rem auto;
   font-size: 1.7rem;
   line-height: 3rem;
-  text-align: justify;
+  text-align: left;
   max-width: 80rem;
 }
 

@@ -21,9 +21,19 @@ html {
 .title-container {
   padding: 5rem 0;
   text-align: center;
-  color: var(--light-purple);
   height: 15rem;
+
+  /* font-size: 2rem; */
+}
+
+.home-link {
+  color: var(--light-purple);
+  text-decoration: none;
   font-size: 2rem;
+}
+
+.home-link:hover {
+  color: var(--dark-purple);
 }
 
 .main-header {
@@ -50,17 +60,18 @@ html {
   /* outline: 1px solid rebeccapurple; */
 }
 
-.article-container > h2 {
-  font-size: 4rem;
+.article-container h2 {
+  font-size: 3rem;
   text-align: center;
   padding: 2rem 0;
+  /* border: 1px solid red; */
 }
 
 .article-container > p {
   margin: 1.5rem auto;
   font-size: 1.7rem;
   line-height: 3rem;
-  text-align: justify;
+  text-align: left;
   max-width: 80rem;
 }
 
