@@ -50,29 +50,30 @@
              <p>So in this analogy, HTML would be the structure of the body. CSS would be our appearance, like our clothes and hair color for example. Now JavaScript would be our nervous system and muscles. It gives everything movement and dynamic abilities.</p>
 
              <h2>Control flow and Loops</h2>
-             <p>Loops are a fundamental part of JavaScript language, they are used in JavaScript to automate repetitive tasks based on a certain condition.</p>
-             <p>It </p>
-
-
+             <p>Control flow is the order in which the computer executes statements in a script. Code is run in order from the first line to the last line in the file, unless the computer runs across structures that change the control flow, such as conditionals and loops. </p>
+             <p>Loops are a fundamental part of JavaScript language, they are used to automate repetitive tasks based on a certain condition.</p>
+             
 
              <h2>DOM</h2>
-             <p>DOM stands for <em>document object model</em> and it is a structured representation of HTML documents. It allows JavaScript to access HTML elements and styles in order to manipulate them in complex ways.</p>
+             <p>DOM stands for <em>Document Object Model</em> and it is a structured representation of HTML documents. It allows JavaScript to access HTML elements and styles in order to manipulate them in complex ways.</p>
              <p>
                The DOM is not part of JavaScript, it is actually part of something called web API's.
                And API's are like libraries that the browser implement and we can then access using JavaScript.
             </p>
             <p>There are different ways to access an HTML element using DOM. Below is a simple example of one of them.</p>
             <img class="article-img img-size" src="/imgs/querySelector-example.png"/>
-            <p>In the example above I used the <em>querySelector()</em> to change the font color of the paragraph. You should be able to notice two things:</p>
-             <ol class="list-container">
-               <li class="list-items">In order to access the <em>class = "bestRecords"</em> we used the <em>dot</em> before the class name. In case you want to access an <em>id</em> just use <em>hashtag</em> instead of <em>dot</em></li>
-               <li class="list-items">The <em>class = "bestRecords"</em> is placed in all the paragraphs but it only changed the style of the first one. And that's how this selector should work. If you need to manipulate all the paragraphs you can use the <em>querySelectorAll()</em></li>
-             </ol>                 
+            <p>In the example above I used the <em>"document.querySelector()"</em> method to change the font color of the paragraph. You can notice two things:</p>
+                          
+                <p> 1 - In order to access the <em>class = "bestRecords"</em> I used the <em>dot</em> before the class name. In case you want to access an <em>id</em> just use <em>hashtag</em> instead of <em>dot</em>.</p>
 
+                <p> 2 - The <em>class = "bestRecords"</em> is placed in all the paragraphs but it only changed the style of the first one. And that's how this selector should work. If you need to manipulate all the paragraphs you can use the <em>"document.querySelectorAll()"</em>.</p>
+                         
+              
                <h2>Arrays vs Objects</h2>
                <p>Arrays and Objects are data structures, which is a collection of data values.</p>
                <p>Arrays behave like a big container and it can hold as many values as you want. It can also accept values of any type.</p>
                <p>Arrays are zero based, and this basically means that the first item of an array is at the position zero. So if you want to retrieve an element in the array you need to specify the index position and you can do this by using <em>bracket notation.</em></p>
+
                <img class="article-img img-size" src="/imgs/array-example.png"/>
 
                <p>Now, just like <em>arrays</em>, <em>objects</em> are used to essentially group different variables that really belong together. The big difference between them, is that in <em>objects</em> the order of these values does not matter at all when you want to access them. </p>
