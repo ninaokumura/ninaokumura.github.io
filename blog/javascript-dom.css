@@ -85,6 +85,10 @@ html {
   padding: 1rem;
 }
 
+.img-size {
+  width: 60rem;
+}
+
 .footer {
   width: 100%;
   text-align: center;
