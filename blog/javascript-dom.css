@@ -86,7 +86,15 @@ html {
 }
 
 .img-size {
-  width: 60rem;
+  width: 80rem;
+}
+
+.list-items {
+  margin: 1.5rem auto;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  text-align: justify;
+  max-width: 80rem;
 }
 
 .footer {
