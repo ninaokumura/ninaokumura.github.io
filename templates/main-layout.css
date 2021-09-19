@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: #333;
+  color: #efefef;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.sidebar {
+  /* outline: 2px solid rebeccapurple; */
+  padding: 1rem;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  /* display: flex; */
+  flex: 1;
+  /* outline: 2px solid red; */
+}
+
+.main-content {
+  /* outline: 2px solid green; */
+  flex: 1;
+  padding: 1rem;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: rebeccapurple;
+  color: #efefef;
+}
+/* Utilities */
+.clamp {
+  max-width: 120rem;
+  width: 100%;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Components */
+.profileCard {
+  border-radius: 0.8rem;
+  overflow: hidden;
+  /* border: 2px solid greenyellow; */
+  display: flex;
+}
+
+.profileCard-avatar {
+  width: 15rem;
+}
+.profileCard-header {
+  background-color: #666;
+}
+
+.profileCard-body {
+  padding: 1rem;
+}
+
+.tile-container {
+  display: grid;
+
+  gap: 1rem;
+}
+
+.tile {
+  min-height: 10rem;
+  padding: 1rem;
+  border: 1px solid rebeccapurple;
+  border-radius: 0.8rem;
+}
+
+/* Media queries */
+
+@media (min-width: 400px) {
+  .tile-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tile {
+    margin: auto;
+    width: 100%;
+    max-width: 15rem;
+  }
+}
+
+@media (min-width: 540px) {
+  .main-container {
+    display: flex;
+  }
+
+  .profileCard {
+    display: grid;
+  }
+
+  .tile-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

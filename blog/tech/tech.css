@@ -17,6 +17,11 @@ html {
   color: var(--dark-purple);
 }
 
+ion-icon {
+  font-size: 1.8rem;
+  color: var(--fuchsia);
+}
+
 /* Header*/
 .title-container {
   padding: 5rem 0;
@@ -35,7 +40,6 @@ html {
 .home-link:hover {
   color: var(--dark-purple);
 }
-
 .main-header {
   display: flex;
   flex-direction: column;
@@ -47,9 +51,9 @@ html {
 
 .container {
   margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  /* min-height: 100vh; */
+  /* display: flex;
+  flex-direction: column; */
   background-color: var(--light-purple);
 }
 
@@ -61,7 +65,7 @@ html {
 }
 
 .article-container > h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   padding: 2rem 0;
 }
@@ -70,7 +74,7 @@ html {
   margin: 1.5rem auto;
   font-size: 1.7rem;
   line-height: 3rem;
-  text-align: justify;
+  text-align: left;
   max-width: 80rem;
 }
 
@@ -85,11 +89,37 @@ html {
   padding: 1rem;
 }
 
-.sub-heading {
-  margin: 1.5rem auto;
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  flex: 1;
+  padding: 6rem;
+  align-content: start;
+}
+
+.list-container {
+  /* outline: 1px solid purple; */
+  height: 20rem;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.list-container > h3 {
+  font-size: 2.5rem;
   text-align: center;
-  font-size: 2rem;
-  padding: 1.5rem;
+}
+
+.list-items > li {
+  list-style: none;
+  font-size: 1.5rem;
+  text-align: start;
+  padding: 0.5rem;
+  white-space: nowrap;
 }
 
 .footer {
