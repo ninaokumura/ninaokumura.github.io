@@ -96,8 +96,6 @@ ion-icon {
 }
 
 .footer {
-  /* max-width: 120rem; */
-  width: 100%;
   text-align: center;
   background-color: var(--purple);
   padding: 1rem;
