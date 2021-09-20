@@ -13,7 +13,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 52.5%;
 }
 
 p {
@@ -35,14 +35,17 @@ ion-icon:hover {
 
 /* Header*/
 .title-container {
-  padding: 5rem 0;
+  padding: 3rem 0;
+}
+
+.main-heading {
   text-align: center;
   color: var(--light-purple);
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
 .main-header {
-  height: 15rem;
+  /* height: 15rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -157,19 +160,19 @@ main > h2 {
     padding: 3rem 0;
   }
 
-  .title-container > h1 {
-    font-size: 2.2rem;
+  .main-heading {
+    font-size: 2.5rem;
     text-align: center;
     color: var(--light-purple);
   }
 
-  .main-header {
+  /* .main-header {
     height: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--purple);
-  }
+  } */
 
   .main-content {
     display: grid;
@@ -212,6 +215,18 @@ main > h2 {
 }
 
 @media (min-width: 480px) {
+  .title-container {
+    padding: 3rem 0rem;
+    text-align: center;
+    color: var(--light-purple);
+  }
+
+  .main-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--light-purple);
+  }
+
   .main-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -253,34 +268,16 @@ main > h2 {
 
 @media (min-width: 769px) {
   .title-container {
-    padding: 5rem 0;
-    /* text-align: center; */
-    /* color: var(--light-purple); */
-    /* font-size: 4rem; */
-  }
-
-  .title-container > h1 {
-    /* outline: 1px solid red; */
-    font-size: 4rem;
+    padding: 3rem 0;
     text-align: center;
-    color: var(--light-purple);
   }
 
-  .main-header {
-    height: 15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: var(--purple);
+  .main-heading {
+    font-size: 3.5rem;
+    text-align: center;
   }
-  /* .title-container {
-    padding: 2rem 0;
-  }
-
-  
 
   /* .main-header {
-    height: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

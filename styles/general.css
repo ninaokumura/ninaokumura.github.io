@@ -13,17 +13,28 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
   color: var(--dark-purple);
+}
+
+ion-icon {
+  font-size: 1.8rem;
+  color: var(--fuchsia);
 }
 
 /* Header*/
 .title-container {
-  padding: 5rem 0;
+  padding: 3rem 0;
   text-align: center;
-  height: 15rem;
+  color: var(--light-purple);
+  /* height: 10rem; */
+  font-size: 2rem;
+}
 
-  /* font-size: 2rem; */
+.main-heading {
+  font-size: 3.5rem;
+  text-align: center;
+  color: var(--light-purple);
 }
 
 .home-link {
@@ -35,7 +46,6 @@ html {
 .home-link:hover {
   color: var(--dark-purple);
 }
-
 .main-header {
   display: flex;
   flex-direction: column;
@@ -60,11 +70,10 @@ html {
   /* outline: 1px solid rebeccapurple; */
 }
 
-.article-container h2 {
+.article-container > h2 {
   font-size: 3rem;
   text-align: center;
   padding: 2rem 0;
-  /* border: 1px solid red; */
 }
 
 .article-container > p {
@@ -80,13 +89,14 @@ html {
 }
 
 .article-img {
-  width: 50rem;
+  width: 60rem;
   display: block;
   margin: auto;
   padding: 1rem;
 }
 
 .footer {
+  /* max-width: 120rem; */
   width: 100%;
   text-align: center;
   background-color: var(--purple);

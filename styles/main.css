@@ -13,7 +13,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 p {
@@ -35,14 +35,20 @@ ion-icon:hover {
 
 /* Header*/
 .title-container {
-  padding: 5rem 0;
+  padding: 3rem 0;
+  /* text-align: center; */
+  /* color: var(--light-purple); */
+  /* font-size: 2rem; */
+}
+
+.main-heading {
+  font-size: 3rem;
   text-align: center;
   color: var(--light-purple);
-  font-size: 2rem;
 }
 
 .main-header {
-  height: 15rem;
+  /* height: 15rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
