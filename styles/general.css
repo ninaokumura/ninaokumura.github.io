@@ -46,6 +46,7 @@ ion-icon {
 .home-link:hover {
   color: var(--dark-purple);
 }
+
 .main-header {
   display: flex;
   flex-direction: column;
