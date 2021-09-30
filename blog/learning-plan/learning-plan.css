@@ -1,3 +1,26 @@
+.reflection-container > h3 {
+  font-size: 2rem;
+  text-align: justify;
+  padding-top: 3rem;
+}
+
+.reflection-container > p {
+  margin: 1.5rem auto;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  text-align: justify;
+  max-width: 80rem;
+}
+
+.reflection-container {
+  /* padding: 4rem; */
+  margin: 1.5rem auto;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  text-align: justify;
+  max-width: 80rem;
+}
+
 /* media query */
 /* Media query */
 @media (min-width: 360px) {
